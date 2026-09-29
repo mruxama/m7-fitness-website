@@ -312,3 +312,23 @@
 .ctaDesc { font-size: 1rem; color: var(--muted-light); max-width: 480px; line-height: 1.6; }
 .ctaBtns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
 
+@media (max-width: 640px) {
+  .section { padding: 4rem 0; }
+  .ceoSection { padding: 4rem 0; }
+  .ceoGrid { gap: 2.5rem; }
+  .visualSide { grid-template-columns: 1fr; }
+  .ctaBtns { flex-direction: column; width: 100%; }
+  .ctaBtns a { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .pageHeroInner, .container { padding: 0 1rem; }
+  .ceoFloatingBadge {
+    bottom: 0.75rem;
+    left: 0.75rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.68rem;
+  }
+  .ceoQuoteCard { padding: 1.25rem 1rem; }
+}
+

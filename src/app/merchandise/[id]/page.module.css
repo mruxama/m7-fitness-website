@@ -314,3 +314,33 @@
 .backBtn:hover {
   color: #ffffff;
 }
+
+@media (max-width: 640px) {
+  .page {
+    padding-top: 90px;
+    padding-bottom: 4rem;
+  }
+  .container {
+    padding: 0 1rem;
+    gap: 1.25rem;
+  }
+  .mainImageWrap {
+    height: 280px;
+  }
+  .thumbsGrid {
+    gap: 0.5rem;
+  }
+  .thumbBtn {
+    height: 64px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .price {
+    font-size: 1.6rem;
+  }
+  .orderWaBtn {
+    padding: 0.9rem 1.25rem;
+    font-size: 0.88rem;
+  }
+}

@@ -125,3 +125,12 @@
   color: var(--muted);
   text-align: center;
 }
+
+@media (max-width: 640px) {
+  .section { padding: 4rem 0; }
+  .card { padding: 1.5rem 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+}

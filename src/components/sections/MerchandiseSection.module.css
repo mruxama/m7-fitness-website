@@ -205,3 +205,19 @@
   background: #ff1c40;
   transform: translateY(-1px);
 }
+
+@media (max-width: 768px) {
+  .section { padding: 4rem 0; }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageContainer { height: 240px; }
+  .cardBody { padding: 1.25rem 1rem; gap: 0.75rem; }
+  .productName { font-size: 1.25rem; }
+  .actions { flex-direction: column; gap: 0.6rem; }
+  .viewBtn, .orderBtn { width: 100%; text-align: center; padding: 0.8rem; }
+}

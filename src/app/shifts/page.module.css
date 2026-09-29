@@ -121,3 +121,20 @@
 /* CTA */
 .ctaBox { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
 .ctaBox p { font-size: 1rem; color: var(--muted-light); }
+
+@media (max-width: 640px) {
+  .section { padding: 4rem 0; }
+  .shiftCard { padding: 1.5rem 1.25rem; }
+  .hoursStrip {
+    padding: 0.85rem 1rem;
+    font-size: 0.82rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner, .container { padding: 0 1rem; }
+  .timelineLabels { font-size: 0.58rem; }
+  .timeline { height: 36px; }
+  .shiftName { font-size: 1.6rem; }
+}

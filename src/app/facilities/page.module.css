@@ -119,3 +119,17 @@
   text-align: center;
 }
 .ctaBox p { font-size: 1rem; color: var(--muted-light); }
+
+@media (max-width: 640px) {
+  .amenityList {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+  .section { padding: 4rem 0; }
+  .card { padding: 1.5rem 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .inner, .container { padding: 0 1rem; }
+  .amenityItem { padding: 0.85rem 1rem; font-size: 0.82rem; }
+}

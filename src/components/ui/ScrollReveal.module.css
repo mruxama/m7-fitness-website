@@ -21,6 +21,13 @@
   transform: translateX(-45px);
 }
 
+@media (max-width: 768px) {
+  .dirLeft,
+  .dirRight {
+    transform: translateY(30px);
+  }
+}
+
 .dirScale {
   transform: scale(0.92) translateY(30px);
 }

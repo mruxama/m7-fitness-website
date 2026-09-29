@@ -79,8 +79,22 @@
 .trialBtn:hover { transform: translateY(-2px); }
 
 @media (max-width: 768px) {
+  .section { padding: 4rem 0; }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
   .card { padding: 1.75rem 1.25rem; }
   .trialBanner { padding: 1.5rem; flex-direction: column; align-items: stretch; text-align: center; }
   .trialContent { flex-direction: column; text-align: center; }
   .trialBtn { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .card { padding: 1.5rem 1rem; gap: 1.25rem; }
+  .priceVal { font-size: 1.85rem; }
+  .topRow { flex-wrap: wrap; }
+  .savings { flex-wrap: wrap; }
+  .trialIconBox { width: 44px; height: 44px; }
+  .trialTitle { font-size: 1.15rem; }
 }

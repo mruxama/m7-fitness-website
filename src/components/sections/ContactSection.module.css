@@ -162,3 +162,21 @@
 
 .successState p { font-size: 0.9rem; color: var(--muted-light); }
 .successSub { color: var(--muted); font-size: 0.82rem !important; }
+
+@media (max-width: 640px) {
+  .section { padding: 4rem 0; }
+  .infoCards {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+  .infoValue {
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .mapWrap { height: 220px; }
+  .formWrap { padding: 1.25rem 1rem; }
+  .infoCard { padding: 0.85rem; }
+}
