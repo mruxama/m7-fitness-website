@@ -8,15 +8,19 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
+    "caniuse-lite": "^1.0.30001813",
     "gsap": "^3.15.0",
     "next": "^14.2.35",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "three": "^0.186.0"
   },
   "devDependencies": {

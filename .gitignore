@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/.node_modules_old
+/node_modules_old
+/node_modules_bad
 /.pnp
 .pnp.js
 .yarn/install-state.gz
