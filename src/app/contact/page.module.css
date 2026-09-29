@@ -1,0 +1,7 @@
+.page { padding-top: 80px; }
+.pageHero { padding: 5rem 0 4rem; background: var(--bg-secondary); border-bottom: 1px solid var(--border); position: relative; }
+.pageHero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--brand-crimson), transparent); }
+.inner { max-width: var(--container-xl); margin: 0 auto; padding: 0 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+@media (min-width: 1280px) { .inner { padding: 0 3rem; } }
+.crimson { color: var(--brand-crimson); }
+.desc { font-size: 1rem; color: var(--muted-light); line-height: 1.6; max-width: 560px; }

@@ -1,0 +1,24 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25D366" />
+      <stop offset="100%" stop-color="#128C7E" />
+    </linearGradient>
+    <linearGradient id="waAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E0FFE0" />
+    </linearGradient>
+    <filter id="waGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Outer Glow Ring -->
+  <circle cx="24" cy="24" r="21" stroke="url(#waGrad)" stroke-width="2" stroke-dasharray="3 3" opacity="0.7" />
+  <!-- Main Glass Circle -->
+  <circle cx="24" cy="24" r="18" fill="url(#waGrad)" filter="url(#waGlow)" />
+  <!-- WhatsApp Bubble Path -->
+  <path d="M24 10C16.268 10 10 16.268 10 24C10 26.792 10.82 29.39 12.234 31.564L10.75 37.25L16.6 35.798C18.686 37.086 21.232 37.846 23.97 37.846C31.702 37.846 37.97 31.578 37.97 23.846C37.97 16.114 31.702 10 24 10Z" fill="none" stroke="url(#waAccent)" stroke-width="2.2" stroke-linejoin="round" />
+  <!-- Phone Receiver Icon inside -->
+  <path d="M18.5 17.5C17.9 17.5 17 18 16.5 19C16 20 15 22.5 17 25.5C19 28.5 21.5 29.5 22.5 29C23.5 28.5 24 27.6 24 27C24 26.5 23.5 26 22.8 25.6L21 24.7C20.5 24.4 20 24.5 19.6 24.9L19.1 25.5C18.6 25.2 17.8 24.4 17.2 23.5C16.8 22.8 17.2 22.4 17.5 22L18.1 21.4C18.4 21 18.5 20.5 18.2 20L17.3 18.2C17 17.7 18.7 17.5 18.5 17.5Z" fill="url(#waAccent)" />
+</svg>

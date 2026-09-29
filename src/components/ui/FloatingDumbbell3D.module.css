@@ -1,0 +1,52 @@
+.container {
+  position: fixed;
+  bottom: 2rem;
+  left: 1.5rem;
+  z-index: var(--z-fab);
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(15, 15, 18, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(227, 24, 55, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 15px rgba(227, 24, 55, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform var(--micro) var(--ease-spring), border-color var(--micro) var(--ease-out);
+  bottom: max(2rem, calc(env(safe-area-inset-bottom) + 1rem));
+  left: max(1.5rem, env(safe-area-inset-left));
+}
+
+.container:hover {
+  transform: scale(1.12) translateY(-2px);
+  border-color: var(--brand-crimson);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(227, 24, 55, 0.45);
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(227, 24, 55, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 54px;
+    height: 54px;
+    bottom: 1.25rem;
+    left: 1rem;
+  }
+}

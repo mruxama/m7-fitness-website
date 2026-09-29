@@ -1,0 +1,207 @@
+.section {
+  padding: 6rem 0;
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sectionLabel {
+  display: inline-block;
+}
+
+.title {
+  font-family: 'Barlow', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.crimson {
+  color: var(--brand-crimson);
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+}
+
+.card {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--ui) var(--ease-out),
+              box-shadow var(--ui) var(--ease-out),
+              border-color var(--ui) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-crimson);
+  box-shadow: var(--shadow-lg), 0 0 25px rgba(227, 24, 55, 0.15);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background: #0d0d10;
+  overflow: hidden;
+}
+
+.productImg {
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--micro) var(--ease-out);
+}
+
+.card:hover .productImg {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: rgba(15, 15, 18, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  letter-spacing: 0.04em;
+}
+
+.priceTag {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  background: var(--brand-crimson);
+  color: #ffffff;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 15px rgba(227, 24, 55, 0.5);
+}
+
+.cardBody {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.85rem;
+}
+
+.productName {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+}
+
+.tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand-crimson);
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.actions {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  display: flex;
+  gap: 0.85rem;
+}
+
+.viewBtn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: background var(--micro) var(--ease-out),
+              border-color var(--micro) var(--ease-out);
+}
+
+.viewBtn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.orderBtn {
+  flex: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--brand-crimson);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(227, 24, 55, 0.35);
+  transition: background var(--micro) var(--ease-out),
+              transform var(--micro) var(--ease-out);
+}
+
+.orderBtn:hover {
+  background: #ff1c40;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,31 @@
+.reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dirUp {
+  transform: translateY(45px);
+}
+
+.dirDown {
+  transform: translateY(-45px);
+}
+
+.dirLeft {
+  transform: translateX(45px);
+}
+
+.dirRight {
+  transform: translateX(-45px);
+}
+
+.dirScale {
+  transform: scale(0.92) translateY(30px);
+}
+
+.active {
+  opacity: 1 !important;
+  transform: translate(0, 0) scale(1) !important;
+}

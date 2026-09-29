@@ -1,0 +1,25 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="solarRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A4B" />
+      <stop offset="100%" stop-color="#E31837" />
+    </linearGradient>
+    <linearGradient id="silverGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#C0C0D0" />
+    </linearGradient>
+    <filter id="solarGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Outer Hex Shield -->
+  <path d="M24 4L40 11V23C40 33.5 24 43 24 43C24 43 8 33.5 8 23V11L24 4Z" stroke="url(#silverGold)" stroke-width="2.5" stroke-linejoin="round" opacity="0.95" />
+  <path d="M24 7L37 13V23C37 31.5 24 39.5 24 39.5C24 39.5 11 31.5 11 23V13L24 7Z" stroke="url(#solarRed)" stroke-width="1.5" opacity="0.5" stroke-dasharray="3 2" />
+  <!-- Central Energy Lightning Bolt -->
+  <path d="M26 13L16 25H25L22 35L32 23H23L26 13Z" fill="url(#solarRed)" stroke="#FFFFFF" stroke-width="1.2" stroke-linejoin="round" filter="url(#solarGlow)" />
+  <!-- Solar Ray Nodes -->
+  <circle cx="24" cy="4" r="2" fill="#E31837" />
+  <circle cx="40" cy="11" r="2" fill="#E31837" />
+  <circle cx="8" cy="11" r="2" fill="#E31837" />
+</svg>

@@ -1,0 +1,179 @@
+.section {
+  padding: 6rem 0;
+  background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-crimson), transparent);
+}
+
+.container {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 1280px) { .container { padding: 0 3rem; } }
+
+.header { text-align: center; display: flex; flex-direction: column; gap: 0.75rem; align-items: center; }
+.crimson { color: var(--brand-crimson); }
+.sub { color: var(--muted-light); max-width: 520px; font-size: 1rem; line-height: 1.6; }
+
+/* Timeline */
+.timelineWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timelineLabels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.25rem;
+}
+
+.timelineLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.timeline {
+  position: relative;
+  height: 40px;
+  background: var(--surface-3);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.timelineBar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: var(--radius-md);
+  opacity: 0.9;
+  transition: opacity var(--micro) var(--ease-out);
+}
+
+.timelineBar:hover { opacity: 1; }
+
+.timelineTrack {
+  height: 1px;
+  background: var(--border);
+  margin-top: 4px;
+}
+
+/* Shift Cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+.card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  overflow: hidden;
+  transition: transform var(--ui) var(--ease-out),
+              box-shadow var(--ui) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-crimson);
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--brand-crimson-subtle);
+  border: 1px solid var(--border-crimson);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBadge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cardName {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--text);
+}
+
+.cardTime {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand-crimson);
+}
+
+.cardDesc {
+  font-size: 0.875rem;
+  color: var(--muted-light);
+  line-height: 1.65;
+}
+
+.cardGlow {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.06;
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+/* Strip */
+.strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--glass);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.strip strong { color: var(--text); }
